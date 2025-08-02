@@ -1,4 +1,4 @@
 [[headers]]
   for = "/favicon.ico"
   [headers.values]
-    Cache-Control = "no-cache"
+    Cache-Control = "no-store"
