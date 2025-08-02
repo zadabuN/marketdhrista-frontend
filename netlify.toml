@@ -1,4 +1,14 @@
 [[headers]]
   for = "/favicon.ico"
   [headers.values]
-    Cache-Control = "no-store"
+    Cache-Control = "no-cache, no-store, must-revalidate"
+
+[[headers]]
+  for = "/logo_v2.png"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
+
+[[headers]]
+  for = "/preview.png"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
