@@ -1,11 +1,10 @@
-// File: src/components/DashboardSummary.jsx
 import React, { useEffect, useState } from "react";
 
 function DashboardSummary() {
   const [summary, setSummary] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:8000/dashboard/summary")
+    fetch("https://marketdhrista-backend.onrender.com/dashboard/summary")
       .then((res) => res.json())
       .then((data) => setSummary(data))
       .catch((err) => console.error("Error fetching summary:", err));
